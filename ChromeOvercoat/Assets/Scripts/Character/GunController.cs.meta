@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 4aa2348d7e48ddd4ebcf422e05abe967
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gunDatas: {fileID: 11400000, guid: 1c81334ee8a1a9c49bb17066a3b835e7, type: 2}
+  - gunCamera: {instanceID: 0}
+  - bulletInMagRenderer: {instanceID: 0}
+  - muzzleParticles: {instanceID: 0}
+  - sparkParticles: {instanceID: 0}
+  - muzzleflashLight: {instanceID: 0}
+  - mainAudioSource: {instanceID: 0}
+  - shootAudioSource: {instanceID: 0}
+  - timescaleText: {instanceID: 0}
+  - currentWeaponText: {instanceID: 0}
+  - currentAmmoText: {instanceID: 0}
+  - totalAmmoText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
