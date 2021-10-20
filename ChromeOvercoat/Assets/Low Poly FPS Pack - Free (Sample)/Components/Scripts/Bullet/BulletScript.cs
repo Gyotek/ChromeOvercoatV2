@@ -50,7 +50,7 @@ public class BulletScript : MonoBehaviour {
 		}
 
 		//If bullet collides with "Target" tag
-		if (collision.transform.tag == "Target") 
+		else if (collision.transform.tag == "Target") 
 		{
 			//Toggle "isHit" on target object
 			collision.transform.gameObject.GetComponent
@@ -60,11 +60,20 @@ public class BulletScript : MonoBehaviour {
 		}
 			
 		//If bullet collides with "ExplosiveBarrel" tag
-		if (collision.transform.tag == "ExplosiveBarrel") 
+		else if (collision.transform.tag == "ExplosiveBarrel") 
 		{
 			//Toggle "explode" on explosive barrel object
 			collision.transform.gameObject.GetComponent
 				<ExplosiveBarrelScript>().explode = true;
+			//Destroy bullet object
+			Destroy(gameObject);
+		}
+
+		else if (collision.gameObject.GetComponent<Vessel>())
+		{
+			//Toggle "isHit" on target object
+			collision.transform.gameObject.GetComponent
+				<Vessel>().isHit = true;
 			//Destroy bullet object
 			Destroy(gameObject);
 		}

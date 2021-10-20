@@ -19,6 +19,8 @@ namespace Chrome
 
         [Tooltip("Amount of force applied to the player when jumping."), SerializeField]
         public float jumpForce = 35f;
+        [Tooltip("Amount of force applied to the player when double-jumping."), SerializeField]
+        public float doublejumpForce = 35f;
 
         [Header("Look Settings")]
         [Tooltip("Rotation speed of the fps controller."), SerializeField]

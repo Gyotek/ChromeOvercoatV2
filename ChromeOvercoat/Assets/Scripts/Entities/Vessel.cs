@@ -5,6 +5,10 @@ using UnityEngine;
 public class Vessel : MonoBehaviour
 {
 
+	[SerializeField] EnergyEel eelPrefab;
+	[SerializeField] Transform eelSpawnPoint;
+
+
 	float randomTime;
 	bool routineStarted = false;
 
@@ -51,6 +55,9 @@ public class Vessel : MonoBehaviour
 		//Start the timer
 		StartCoroutine(DelayTimer());
 		routineStarted = true;
+
+		var eel = Instantiate(eelPrefab, eelSpawnPoint.position, Quaternion.identity);
+		eel.weakened = true;
 	}
 
 	//Time before the target pops back up

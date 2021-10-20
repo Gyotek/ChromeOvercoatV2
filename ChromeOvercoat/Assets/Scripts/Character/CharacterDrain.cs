@@ -2,17 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterDrain : MonoBehaviour
+public class CharacterDrain : MonoBehaviour, IDrainer
 {
-    // Start is called before the first frame update
-    void Start()
+    bool canDrain;
+
+    private IDrainable drainableTarget = null;
+    public void SetDrainableTarget(IDrainable target)
     {
-        
+        drainableTarget = target;
+        if (target != null)
+            canDrain = true;
+        else
+            canDrain = false;
+
+        Debug.Log(canDrain);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (canDrain && Input.GetButtonDown("Drain"))
+        {
+            drainableTarget.Drain();
+        }
     }
 }

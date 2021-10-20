@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3289313079370311845}
   - component: {fileID: 7925311042421318687}
   - component: {fileID: 2900836004599480215}
+  - component: {fileID: 3674914606691361181}
+  - component: {fileID: 3674914606691361182}
   m_Layer: 0
   m_Name: EnergyEel
   m_TagString: Untagged
@@ -92,7 +94,7 @@ SphereCollider:
   m_GameObject: {fileID: 8924344667056452835}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -108,3 +110,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2672f07fdaf0f42bf34582582f5053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 3674914606691361182}
+--- !u!135 &3674914606691361181
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8924344667056452835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!111 &3674914606691361182
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8924344667056452835}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a187408c6b74c3a4a9b41a9362683006, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 96d5a13db93a6624982371c41d86f3b7, type: 2}
+  - {fileID: 7400000, guid: a187408c6b74c3a4a9b41a9362683006, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

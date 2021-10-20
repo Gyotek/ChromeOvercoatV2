@@ -221,11 +221,20 @@ namespace Chrome
             return true;
         }
 
+        bool hasDoubleJumped = false;
         private void Jump()
         {
-            if (!_isGrounded || !input.Jump) return;
-            _isGrounded = false;
-            _rigidbody.AddForce(Vector3.up * characterDatas.jumpForce, ForceMode.Impulse);
+            if (_isGrounded && input.Jump)
+            {
+                _isGrounded = false;
+                hasDoubleJumped = false;
+                _rigidbody.AddForce(Vector3.up * characterDatas.jumpForce, ForceMode.Impulse);
+            }
+            else if (!hasDoubleJumped && input.Jump && !_isGrounded)
+            {
+                hasDoubleJumped = true;
+                _rigidbody.AddForce(Vector3.up * characterDatas.doublejumpForce, ForceMode.Impulse);
+            }
         }
 
         private void PlayFootstepSounds()

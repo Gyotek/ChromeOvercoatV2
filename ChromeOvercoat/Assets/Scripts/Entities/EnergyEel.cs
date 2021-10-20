@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnergyEel : MonoBehaviour, IDrainable
 {
-    private bool weakened = false;
+    public bool weakened = false;
     [SerializeField] Animation anim;
-    
+    [SerializeField] float speed;
+
 
     public bool Drain()
     {
@@ -22,11 +23,19 @@ public class EnergyEel : MonoBehaviour, IDrainable
 
     private void OnEnable()
     {
-        weakened = true;
         anim.Play("EnergyEel_Apparition");
-
     }
     private void OnDisable()
     {
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        other.GetComponent<IDrainer>()?.SetDrainableTarget(this);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        other.GetComponent<IDrainer>()?.SetDrainableTarget(null);
     }
 }
