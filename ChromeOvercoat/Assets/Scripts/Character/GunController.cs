@@ -212,6 +212,7 @@ namespace Chrome
 					shootAudioSource.clip = SoundClips.shootSound;
 					shootAudioSource.Play();
 
+					EventsHandler.instance.TriggerEvent(EventsHandler.events.GunShoot);
 					if (!isAiming) //if not aiming
 					{
 						anim.Play("Fire", 0, 0f);
@@ -430,11 +431,19 @@ namespace Chrome
 			if (anim.GetCurrentAnimatorStateInfo(0).IsName("Reload Out Of Ammo") ||
 				anim.GetCurrentAnimatorStateInfo(0).IsName("Reload Ammo Left"))
 			{
-				isReloading = true;
+				if (!isReloading)
+				{
+					isReloading = true;
+					EventsHandler.instance.TriggerEvent(EventsHandler.events.GunReloadStart);
+				}
 			}
 			else
 			{
-				isReloading = false;
+                if (isReloading)
+				{
+					isReloading = false;
+					EventsHandler.instance.TriggerEvent(EventsHandler.events.GunReloadEnd);
+				}
 			}
 		}
 	}

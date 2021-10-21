@@ -7,15 +7,18 @@ public class CharacterDrain : MonoBehaviour, IDrainer
     bool canDrain;
 
     private IDrainable drainableTarget = null;
-    public void SetDrainableTarget(IDrainable target)
+    public void SetDrainableTarget(IDrainable target, bool onRange)
     {
-        drainableTarget = target;
-        if (target != null)
+        if (onRange)
+        {
+            drainableTarget = target;
             canDrain = true;
-        else
+        }
+        else if (!onRange && drainableTarget == target)
+        {
+            drainableTarget = null;
             canDrain = false;
-
-        Debug.Log(canDrain);
+        }
     }
 
     private void Update()
@@ -23,6 +26,8 @@ public class CharacterDrain : MonoBehaviour, IDrainer
         if (canDrain && Input.GetButtonDown("Drain"))
         {
             drainableTarget.Drain();
+
+            EventsHandler.instance.TriggerEvent(EventsHandler.events.Drain);
         }
     }
 }
