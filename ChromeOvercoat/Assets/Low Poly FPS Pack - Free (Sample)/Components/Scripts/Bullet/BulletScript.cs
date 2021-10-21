@@ -21,6 +21,7 @@ public class BulletScript : MonoBehaviour {
 	{
 		//Start destroy timer
 		StartCoroutine (DestroyAfter ());
+		EventsHandler.instance.TriggerEvent(EventsHandler.events.BulletSpawn);
 	}
 
 	//If the bullet collides with anything
@@ -48,11 +49,19 @@ public class BulletScript : MonoBehaviour {
 			//Destroy bullet object
 			Destroy(gameObject);
 		}
+		else if (collision.gameObject.GetComponent<Vessel>())
+		{
+			collision.transform.gameObject.GetComponent<Vessel>().Destroyed();
+			//Destroy bullet object
+			Destroy(gameObject);
+		}
 
 		//If bullet collides with "Target" tag
 		else if (collision.transform.tag == "Target") 
 		{
 			//Toggle "isHit" on target object
+			if (collision.transform.gameObject.GetComponent
+				<TargetScript>().isHit != true)
 			collision.transform.gameObject.GetComponent
 				<TargetScript>().isHit = true;
 			//Destroy bullet object
@@ -69,14 +78,7 @@ public class BulletScript : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-		else if (collision.gameObject.GetComponent<Vessel>())
-		{
-			//Toggle "isHit" on target object
-			collision.transform.gameObject.GetComponent
-				<Vessel>().isHit = true;
-			//Destroy bullet object
-			Destroy(gameObject);
-		}
+		EventsHandler.instance.TriggerEvent(EventsHandler.events.BulletImpact);
 	}
 
 	private IEnumerator DestroyTimer () 

@@ -4,38 +4,87 @@ using UnityEngine;
 
 public class EnergyEel : MonoBehaviour, IDrainable
 {
-    public bool weakened = false;
+    private bool weakened = false;
+    private bool moving = true;
     [SerializeField] Animation anim;
-    [SerializeField] float speed;
+    [SerializeField] float speed = 20.0f;
+    private Vessel nextVessel;
+    private Vessel previousVessel;
 
+
+
+    private void Update()
+    {
+        if (!weakened && moving)
+            MoveToNextVessel();
+    }
 
     public bool Drain()
     {
         if (weakened)
         {
             weakened = false;
+            moving = false;
             anim.Play("EnergyEel_Drained");
+            StartCoroutine(DestroyCoroutine());
             return true;
         }
         else
             return false;
     }
 
-    private void OnEnable()
+    IEnumerator DestroyCoroutine()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Destroy(this.gameObject);
+    }
+
+    public void Appartion(Vessel vessel)
     {
         anim.Play("EnergyEel_Apparition");
+        nextVessel = null;
+        previousVessel = vessel;
+        weakened = true;
+        moving = false;
+        StartCoroutine(WeakCoroutine());
     }
-    private void OnDisable()
+
+    void StartMovingToNextVessel()
     {
+        if (previousVessel != null)
+            nextVessel = VesselManager.instance.GetAntoherRandomVessel(previousVessel);
+        else
+            nextVessel = VesselManager.instance.GetRandomVessel();
+
+        weakened = false;
+        moving = true;
+    }
+
+    void MoveToNextVessel()
+    {
+        if (nextVessel == null)
+            nextVessel = VesselManager.instance.GetRandomVessel();
+
+        //Debug.Log(Vector3.MoveTowards(transform.position, nextVessel.eelSpawnPoint.position, speed * Time.deltaTime));
+        transform.position = Vector3.MoveTowards(transform.position, nextVessel.eelSpawnPoint.position, speed * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, nextVessel.eelSpawnPoint.position) < 1f)
+            nextVessel.Possessed(this);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<IDrainer>()?.SetDrainableTarget(this);
+        other.GetComponent<IDrainer>()?.SetDrainableTarget(this, true);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        other.GetComponent<IDrainer>()?.SetDrainableTarget(null);
+        other.GetComponent<IDrainer>()?.SetDrainableTarget(this, false);
+    }
+
+    IEnumerator WeakCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+        StartMovingToNextVessel();
     }
 }

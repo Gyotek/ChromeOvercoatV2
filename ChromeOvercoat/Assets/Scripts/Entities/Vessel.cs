@@ -6,14 +6,13 @@ public class Vessel : MonoBehaviour
 {
 
 	[SerializeField] EnergyEel eelPrefab;
-	[SerializeField] Transform eelSpawnPoint;
+	[SerializeField] public Transform eelSpawnPoint;
 
 
 	float randomTime;
-	bool routineStarted = false;
 
 	//Used to check if the target has been hit
-	public bool isHit = false;
+	public bool isDown = false;
 
 	[Header("Customizable Options")]
 	//Minimum time before the target goes back up
@@ -33,47 +32,35 @@ public class Vessel : MonoBehaviour
 		//Generate random time based on min and max time values
 		randomTime = Random.Range(minTime, maxTime);
 
-		//If the target is hit
-		if (isHit == true)
-		{
-			if (routineStarted == false)
-			{
-				Destroyed();
-			}
-		}
 	}
 
-	private void Destroyed()
+	public void Destroyed()
 	{
+		if (isDown == true) return;
+
 		//Animate the target "down"
 		gameObject.GetComponent<Animation>().Play("target_down");
 
+		isDown = true;
 		//Set the downSound as current sound, and play it
 		audioSource.GetComponent<AudioSource>().clip = downSound;
 		audioSource.Play();
 
-		//Start the timer
-		StartCoroutine(DelayTimer());
-		routineStarted = true;
-
 		var eel = Instantiate(eelPrefab, eelSpawnPoint.position, Quaternion.identity);
-		eel.weakened = true;
+		eel.Appartion(this);
+		EventsHandler.instance.TriggerEvent(EventsHandler.events.VesselDestroyed);
 	}
-
-	//Time before the target pops back up
-	private IEnumerator DelayTimer()
+	public void Possessed(EnergyEel eel)
 	{
-		//Wait for random amount of time
-		yield return new WaitForSeconds(randomTime);
-		//Animate the target "up" 
+		isDown = false;
+		//Animate the target "up"
 		gameObject.GetComponent<Animation>().Play("target_up");
-
-		//Set the upSound as current sound, and play it
+		//Set the downSound as current sound, and play it
 		audioSource.GetComponent<AudioSource>().clip = upSound;
 		audioSource.Play();
 
-		//Target is no longer hit
-		isHit = false;
-		routineStarted = false;
+		Destroy(eel.gameObject);
+		EventsHandler.instance.TriggerEvent(EventsHandler.events.VesselPossessed);
 	}
+
 }

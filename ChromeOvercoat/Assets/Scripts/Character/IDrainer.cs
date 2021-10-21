@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IDrainer
 {
-    abstract void SetDrainableTarget(IDrainable target);
+    abstract void SetDrainableTarget(IDrainable target, bool onRange);
 }

@@ -229,11 +229,13 @@ namespace Chrome
                 _isGrounded = false;
                 hasDoubleJumped = false;
                 _rigidbody.AddForce(Vector3.up * characterDatas.jumpForce, ForceMode.Impulse);
+                EventsHandler.instance.TriggerEvent(EventsHandler.events.Jump);
             }
             else if (!hasDoubleJumped && input.Jump && !_isGrounded)
             {
                 hasDoubleJumped = true;
                 _rigidbody.AddForce(Vector3.up * characterDatas.doublejumpForce, ForceMode.Impulse);
+                EventsHandler.instance.TriggerEvent(EventsHandler.events.Jump);
             }
         }
 
