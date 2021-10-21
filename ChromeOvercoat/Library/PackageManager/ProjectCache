@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637704221707185778
-    m_Hash: 3106612988
+      ticks: 637704336985775088
+    m_Hash: 1910129880
   m_LockFileStatus:
     m_FilePath: D:/PROJECT/P5/ChromeV2/ChromeOvercoatV2/ChromeOvercoat/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637704221708292825
-    m_Hash: 1981419909
+      ticks: 637704336988148476
+    m_Hash: 2284460598
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -167,12 +167,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.cinemachine.git
         revision: 21f619698ca31d69054e96556e03097e48e43c5d
         path: 
-    - packageId: com.unity.collab-proxy@1.11.2
+    - packageId: com.unity.collab-proxy@1.13.5
       testable: 0
       isDirectDependency: 1
-      version: 1.11.2
+      version: 1.13.5
       source: 1
-      resolvedPath: D:\PROJECT\P5\ChromeV2\ChromeOvercoatV2\ChromeOvercoat\Library\PackageCache\com.unity.collab-proxy@1.11.2
+      resolvedPath: D:\PROJECT\P5\ChromeV2\ChromeOvercoatV2\ChromeOvercoat\Library\PackageCache\com.unity.collab-proxy@1.13.5
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -242,8 +242,18 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         verified: 1.11.2
-      dependencies: []
-      resolvedDependencies: []
+      dependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      resolvedDependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
       keywords:
       - backup
       - cloud
@@ -270,13 +280,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637679178630000000
+      datePublishedTicks: 637685076530000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 3bc7fe2ab9acbe4538785fec6100ac17fe9e8da5
+        revision: 4001806dc89b25276d1382d5abffd71731b030e5
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -3318,6 +3328,133 @@ m_PackageAssets:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
         revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        path: 
+    - packageId: com.unity.nuget.newtonsoft-json@2.0.0
+      testable: 0
+      isDirectDependency: 0
+      version: 2.0.0
+      source: 1
+      resolvedPath: D:\PROJECT\P5\ChromeV2\ChromeOvercoatV2\ChromeOvercoat\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+      assetPath: Packages/com.unity.nuget.newtonsoft-json
+      name: com.unity.nuget.newtonsoft-json
+      displayName: Newtonsoft Json
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Newtonsoft Json for use in Unity projects and Unity packages.
+        Currently synced to version 12.0.2.
+
+
+        This package is used for advanced
+        json serialization and deserialization. Most Unity users will be better suited
+        using the existing json tools built into Unity.
+
+        To avoid assembly
+        clashes, please use this package if you intend to use Newtonsoft Json.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.0
+        compatible:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.0
+        verified: 2.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637237898320000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+    - packageId: com.unity.services.core@1.0.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.1
+      source: 1
+      resolvedPath: D:\PROJECT\P5\ChromeV2\ChromeOvercoatV2\ChromeOvercoat\Library\PackageCache\com.unity.services.core@1.0.1
+      assetPath: Packages/com.unity.services.core
+      name: com.unity.services.core
+      displayName: Services Core
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'This package defines common components used by multiple Game
+        Service packages.
+
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        compatible:
+        - 1.0.1
+        verified: 1.0.1
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
         path: 
     - packageId: com.unity.searcher@4.3.2
       testable: 0
