@@ -184,6 +184,8 @@ namespace Chrome
             var direction = new Vector3(input.Move, 0f, input.Strafe).normalized;
             var worldDirection = transform.TransformDirection(direction);
             var velocity = worldDirection * (input.Run ? characterDatas.runningSpeed : characterDatas.walkingSpeed);
+            if (!_isGrounded)
+                velocity = velocity * characterDatas.airControl;
             //Checks for collisions so that the character does not stuck when jumping against walls.
             var intersectsWall = CheckCollisionsWithWalls(velocity);
             if (intersectsWall)
@@ -196,6 +198,8 @@ namespace Chrome
             var smoothZ = _velocityZ.Update(velocity.z, characterDatas.movementSmoothness);
             var rigidbodyVelocity = _rigidbody.velocity;
             var force = new Vector3(smoothX - rigidbodyVelocity.x, 0f, smoothZ - rigidbodyVelocity.z);
+
+
             _rigidbody.AddForce(force, ForceMode.VelocityChange);
         }
 
