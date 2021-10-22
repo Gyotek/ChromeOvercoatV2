@@ -7,6 +7,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Entities/Vessels Data")]
 public class VesselDatas : ScriptableObject
 {
+	public int maxLifePoints = 3;
+	public float speed = 15.0f;
+
+
 	[Header("Weapon Settings")]
 	//How fast the weapon fires, higher value means faster rate of fire
 	[Tooltip("How fast the weapon fires, higher value means faster rate of fire.")]

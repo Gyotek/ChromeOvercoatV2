@@ -7,7 +7,6 @@ public class Vessel : MonoBehaviour
 
 	[SerializeField] EnergyEel eelPrefab;
 	[SerializeField] public Transform eelSpawnPoint;
-	[SerializeField] int maxLifePoints = 3;
 	int lifePoints = 3;
 
 	// FX
@@ -27,10 +26,6 @@ public class Vessel : MonoBehaviour
 
 	[Header("Customizable Options")]
 	[SerializeField] VesselDatas vesselData = default;
-	//Minimum time before the target goes back up
-	public float minTime;
-	//Maximum time before the target goes back up
-	public float maxTime;
 
 	[Header("Audio")]
 	public AudioClip upSound;
@@ -41,7 +36,7 @@ public class Vessel : MonoBehaviour
     private void Start()
     {
 		targetWaypoint = firstWaypoint;
-		lifePoints = maxLifePoints;
+		lifePoints = vesselData.maxLifePoints;
     }
 
 	Vector3 playerPosition;
@@ -205,7 +200,7 @@ public class Vessel : MonoBehaviour
 	public void Possessed(EnergyEel eel)
 	{
 		isDown = false;
-		lifePoints = maxLifePoints;
+		lifePoints = vesselData.maxLifePoints;
 		//Animate the target "up"
 		//gameObject.GetComponent<Animation>().Play("target_up");
 		deathC?.ActivateCall(true);
@@ -221,14 +216,13 @@ public class Vessel : MonoBehaviour
 	[SerializeField] Transform firstWaypoint;
 	[SerializeField] Transform secondWaypoint;
 	Transform targetWaypoint;
-	[SerializeField] float speed = 15.0f;
 	bool isShooting = false;
 	bool movingToFirstPoint = true;
 	void moveToNextPoint()
     {
 		if (isShooting || isDown || targetWaypoint == null) return;
 
-		transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
+		transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, vesselData.speed * Time.deltaTime);
 
 		if (Vector3.Distance(transform.position, targetWaypoint.position) < 1f)
 		{
