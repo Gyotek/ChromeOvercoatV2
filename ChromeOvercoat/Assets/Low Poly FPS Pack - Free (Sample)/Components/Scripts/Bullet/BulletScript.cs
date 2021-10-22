@@ -51,7 +51,7 @@ public class BulletScript : MonoBehaviour {
 		}
 		else if (collision.gameObject.GetComponent<Vessel>())
 		{
-			collision.transform.gameObject.GetComponent<Vessel>().Destroyed();
+			collision.transform.gameObject.GetComponent<Vessel>().TakeDamage(1);
 			//Destroy bullet object
 			Destroy(gameObject);
 		}

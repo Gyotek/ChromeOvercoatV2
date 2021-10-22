@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 22403728}
   - component: {fileID: 22403727}
   - component: {fileID: 22403726}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (25)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 24372478}
   - component: {fileID: 24372477}
   - component: {fileID: 24372476}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (21)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 31622223}
   - component: {fileID: 31622222}
   - component: {fileID: 31622221}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 46596597}
   - component: {fileID: 46596596}
   - component: {fileID: 46596595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (26)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 63423511}
   - component: {fileID: 63423510}
   - component: {fileID: 63423509}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (13)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 67305150}
   - component: {fileID: 67305149}
   - component: {fileID: 67305148}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (33)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 81789004}
   - component: {fileID: 81789003}
   - component: {fileID: 81789002}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (1)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 95666711}
   - component: {fileID: 95666710}
   - component: {fileID: 95666709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 183765969}
   - component: {fileID: 183765968}
   - component: {fileID: 183765967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (24)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -1137,7 +1137,7 @@ GameObject:
   - component: {fileID: 194564892}
   - component: {fileID: 194564891}
   - component: {fileID: 194564890}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (22)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   - component: {fileID: 195060552}
   - component: {fileID: 195060551}
   - component: {fileID: 195060550}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (32)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -1573,7 +1573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 261469969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1614,7 +1614,7 @@ GameObject:
   - component: {fileID: 283800811}
   - component: {fileID: 283800810}
   - component: {fileID: 283800809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (26)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -1779,7 +1779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 339178131}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Front Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1822,7 +1822,7 @@ GameObject:
   - component: {fileID: 342757141}
   - component: {fileID: 342757140}
   - component: {fileID: 342757139}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1917,7 +1917,7 @@ GameObject:
   - component: {fileID: 357797792}
   - component: {fileID: 357797791}
   - component: {fileID: 357797790}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (33)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 368169531}
   - component: {fileID: 368169530}
   - component: {fileID: 368169529}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (5)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2107,7 +2107,7 @@ GameObject:
   - component: {fileID: 375201626}
   - component: {fileID: 375201625}
   - component: {fileID: 375201624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (13)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 405988539}
   - component: {fileID: 405988538}
   - component: {fileID: 405988537}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (22)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2302,7 +2302,7 @@ GameObject:
   - component: {fileID: 440889883}
   - component: {fileID: 440889882}
   - component: {fileID: 440889881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2397,7 +2397,7 @@ GameObject:
   - component: {fileID: 441544851}
   - component: {fileID: 441544850}
   - component: {fileID: 441544849}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (28)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2492,7 +2492,7 @@ GameObject:
   - component: {fileID: 443521233}
   - component: {fileID: 443521232}
   - component: {fileID: 443521231}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2587,7 +2587,7 @@ GameObject:
   - component: {fileID: 443636467}
   - component: {fileID: 443636466}
   - component: {fileID: 443636465}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (31)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2687,7 +2687,7 @@ GameObject:
   - component: {fileID: 447336711}
   - component: {fileID: 447336710}
   - component: {fileID: 447336709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (31)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2779,7 +2779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453004033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2837,7 +2837,7 @@ GameObject:
   - component: {fileID: 465587129}
   - component: {fileID: 465587128}
   - component: {fileID: 465587127}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (7)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -2932,7 +2932,7 @@ GameObject:
   - component: {fileID: 472904543}
   - component: {fileID: 472904542}
   - component: {fileID: 472904541}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3027,7 +3027,7 @@ GameObject:
   - component: {fileID: 513667120}
   - component: {fileID: 513667119}
   - component: {fileID: 513667118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (32)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3122,7 +3122,7 @@ GameObject:
   - component: {fileID: 521869818}
   - component: {fileID: 521869817}
   - component: {fileID: 521869816}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (2)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3217,7 +3217,7 @@ GameObject:
   - component: {fileID: 526730153}
   - component: {fileID: 526730152}
   - component: {fileID: 526730151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (3)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3312,7 +3312,7 @@ GameObject:
   - component: {fileID: 548761378}
   - component: {fileID: 548761377}
   - component: {fileID: 548761376}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (32)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3407,7 +3407,7 @@ GameObject:
   - component: {fileID: 562399778}
   - component: {fileID: 562399777}
   - component: {fileID: 562399776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (29)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3502,7 +3502,7 @@ GameObject:
   - component: {fileID: 564964015}
   - component: {fileID: 564964014}
   - component: {fileID: 564964013}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (30)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3597,7 +3597,7 @@ GameObject:
   - component: {fileID: 586595050}
   - component: {fileID: 586595049}
   - component: {fileID: 586595048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3692,7 +3692,7 @@ GameObject:
   - component: {fileID: 596723482}
   - component: {fileID: 596723481}
   - component: {fileID: 596723480}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (7)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3787,7 +3787,7 @@ GameObject:
   - component: {fileID: 597709303}
   - component: {fileID: 597709302}
   - component: {fileID: 597709301}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3882,7 +3882,7 @@ GameObject:
   - component: {fileID: 601477914}
   - component: {fileID: 601477913}
   - component: {fileID: 601477912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (23)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -3977,7 +3977,7 @@ GameObject:
   - component: {fileID: 644697551}
   - component: {fileID: 644697550}
   - component: {fileID: 644697549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (26)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -4121,7 +4121,7 @@ GameObject:
   - component: {fileID: 655394033}
   - component: {fileID: 655394032}
   - component: {fileID: 655394031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (8)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -4213,7 +4213,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 658606121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4276,7 +4276,7 @@ GameObject:
   - component: {fileID: 666114364}
   - component: {fileID: 666114363}
   - component: {fileID: 666114362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (33)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -4395,7 +4395,7 @@ GameObject:
   - component: {fileID: 680197745}
   - component: {fileID: 680197744}
   - component: {fileID: 680197743}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (29)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -4490,7 +4490,7 @@ GameObject:
   - component: {fileID: 681297645}
   - component: {fileID: 681297644}
   - component: {fileID: 681297643}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4585,7 +4585,7 @@ GameObject:
   - component: {fileID: 685924785}
   - component: {fileID: 685924784}
   - component: {fileID: 685924783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (32)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -4680,7 +4680,7 @@ GameObject:
   - component: {fileID: 686492392}
   - component: {fileID: 686492391}
   - component: {fileID: 686492390}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (14)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -4775,7 +4775,7 @@ GameObject:
   - component: {fileID: 697007864}
   - component: {fileID: 697007863}
   - component: {fileID: 697007862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4870,7 +4870,7 @@ GameObject:
   - component: {fileID: 717666542}
   - component: {fileID: 717666541}
   - component: {fileID: 717666540}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (27)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -4965,7 +4965,7 @@ GameObject:
   - component: {fileID: 728972670}
   - component: {fileID: 728972669}
   - component: {fileID: 728972668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (20)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -5070,7 +5070,7 @@ GameObject:
   - component: {fileID: 734020123}
   - component: {fileID: 734020122}
   - component: {fileID: 734020121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5165,7 +5165,7 @@ GameObject:
   - component: {fileID: 742063054}
   - component: {fileID: 742063053}
   - component: {fileID: 742063052}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: World Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5266,7 +5266,7 @@ GameObject:
   - component: {fileID: 749772329}
   - component: {fileID: 749772328}
   - component: {fileID: 749772327}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5361,7 +5361,7 @@ GameObject:
   - component: {fileID: 768881968}
   - component: {fileID: 768881967}
   - component: {fileID: 768881966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (11)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -5453,7 +5453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 777887278}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,7 +5487,7 @@ GameObject:
   - component: {fileID: 789266190}
   - component: {fileID: 789266189}
   - component: {fileID: 789266188}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (25)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -5582,7 +5582,7 @@ GameObject:
   - component: {fileID: 792834800}
   - component: {fileID: 792834799}
   - component: {fileID: 792834798}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5677,7 +5677,7 @@ GameObject:
   - component: {fileID: 802440895}
   - component: {fileID: 802440894}
   - component: {fileID: 802440893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5772,7 +5772,7 @@ GameObject:
   - component: {fileID: 812065033}
   - component: {fileID: 812065032}
   - component: {fileID: 812065031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (29)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -5960,7 +5960,7 @@ GameObject:
   - component: {fileID: 823243411}
   - component: {fileID: 823243410}
   - component: {fileID: 823243409}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (31)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6055,7 +6055,7 @@ GameObject:
   - component: {fileID: 829498961}
   - component: {fileID: 829498960}
   - component: {fileID: 829498959}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (34)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6150,7 +6150,7 @@ GameObject:
   - component: {fileID: 841385371}
   - component: {fileID: 841385370}
   - component: {fileID: 841385369}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (34)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6245,7 +6245,7 @@ GameObject:
   - component: {fileID: 851625018}
   - component: {fileID: 851625017}
   - component: {fileID: 851625016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (29)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6340,7 +6340,7 @@ GameObject:
   - component: {fileID: 860418308}
   - component: {fileID: 860418307}
   - component: {fileID: 860418306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6435,7 +6435,7 @@ GameObject:
   - component: {fileID: 862801327}
   - component: {fileID: 862801326}
   - component: {fileID: 862801325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (6)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6530,7 +6530,7 @@ GameObject:
   - component: {fileID: 868640540}
   - component: {fileID: 868640539}
   - component: {fileID: 868640538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (6)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6625,7 +6625,7 @@ GameObject:
   - component: {fileID: 872416170}
   - component: {fileID: 872416169}
   - component: {fileID: 872416168}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (27)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6731,7 +6731,7 @@ GameObject:
   - component: {fileID: 896431927}
   - component: {fileID: 896431926}
   - component: {fileID: 896431925}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (32)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -6826,7 +6826,7 @@ GameObject:
   - component: {fileID: 903923630}
   - component: {fileID: 903923629}
   - component: {fileID: 903923628}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6921,7 +6921,7 @@ GameObject:
   - component: {fileID: 910301801}
   - component: {fileID: 910301800}
   - component: {fileID: 910301799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (9)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7016,7 +7016,7 @@ GameObject:
   - component: {fileID: 912591756}
   - component: {fileID: 912591755}
   - component: {fileID: 912591754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (4)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7111,7 +7111,7 @@ GameObject:
   - component: {fileID: 924680971}
   - component: {fileID: 924680970}
   - component: {fileID: 924680969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (30)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7206,7 +7206,7 @@ GameObject:
   - component: {fileID: 945265247}
   - component: {fileID: 945265246}
   - component: {fileID: 945265245}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (11)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7301,7 +7301,7 @@ GameObject:
   - component: {fileID: 951407670}
   - component: {fileID: 951407669}
   - component: {fileID: 951407668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7396,7 +7396,7 @@ GameObject:
   - component: {fileID: 964979628}
   - component: {fileID: 964979627}
   - component: {fileID: 964979626}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (5)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7491,7 +7491,7 @@ GameObject:
   - component: {fileID: 980429677}
   - component: {fileID: 980429676}
   - component: {fileID: 980429675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (28)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7586,7 +7586,7 @@ GameObject:
   - component: {fileID: 988685997}
   - component: {fileID: 988685996}
   - component: {fileID: 988685995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (27)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7681,7 +7681,7 @@ GameObject:
   - component: {fileID: 991346693}
   - component: {fileID: 991346692}
   - component: {fileID: 991346691}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (18)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -7773,7 +7773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 994394280}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7827,7 +7827,7 @@ GameObject:
   - component: {fileID: 1045821230}
   - component: {fileID: 1045821229}
   - component: {fileID: 1045821228}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8264,7 +8264,7 @@ GameObject:
   - component: {fileID: 1057426969}
   - component: {fileID: 1057426968}
   - component: {fileID: 1057426967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8359,7 +8359,7 @@ GameObject:
   - component: {fileID: 1099606969}
   - component: {fileID: 1099606968}
   - component: {fileID: 1099606967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (28)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -8454,7 +8454,7 @@ GameObject:
   - component: {fileID: 1118826133}
   - component: {fileID: 1118826132}
   - component: {fileID: 1118826131}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (31)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -8549,7 +8549,7 @@ GameObject:
   - component: {fileID: 1128262029}
   - component: {fileID: 1128262028}
   - component: {fileID: 1128262027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (14)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -8702,7 +8702,7 @@ GameObject:
   - component: {fileID: 1189026405}
   - component: {fileID: 1189026404}
   - component: {fileID: 1189026403}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (19)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -8797,7 +8797,7 @@ GameObject:
   - component: {fileID: 1209447370}
   - component: {fileID: 1209447369}
   - component: {fileID: 1209447368}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (23)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -8892,7 +8892,7 @@ GameObject:
   - component: {fileID: 1209736099}
   - component: {fileID: 1209736098}
   - component: {fileID: 1209736097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (10)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -8987,7 +8987,7 @@ GameObject:
   - component: {fileID: 1230705423}
   - component: {fileID: 1230705422}
   - component: {fileID: 1230705421}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (12)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -9082,7 +9082,7 @@ GameObject:
   - component: {fileID: 1237797205}
   - component: {fileID: 1237797204}
   - component: {fileID: 1237797203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (18)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -9177,7 +9177,7 @@ GameObject:
   - component: {fileID: 1248443902}
   - component: {fileID: 1248443901}
   - component: {fileID: 1248443900}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9272,7 +9272,7 @@ GameObject:
   - component: {fileID: 1261645451}
   - component: {fileID: 1261645450}
   - component: {fileID: 1261645449}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9367,7 +9367,7 @@ GameObject:
   - component: {fileID: 1289439941}
   - component: {fileID: 1289439940}
   - component: {fileID: 1289439939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9467,7 +9467,7 @@ GameObject:
   - component: {fileID: 1300478908}
   - component: {fileID: 1300478907}
   - component: {fileID: 1300478906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (26)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -9562,7 +9562,7 @@ GameObject:
   - component: {fileID: 1315099309}
   - component: {fileID: 1315099308}
   - component: {fileID: 1315099307}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (30)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -9657,7 +9657,7 @@ GameObject:
   - component: {fileID: 1319384719}
   - component: {fileID: 1319384718}
   - component: {fileID: 1319384717}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (15)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -9757,7 +9757,7 @@ GameObject:
   - component: {fileID: 1395629291}
   - component: {fileID: 1395629290}
   - component: {fileID: 1395629289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9849,7 +9849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1417750961}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9892,7 +9892,7 @@ GameObject:
   - component: {fileID: 1420715494}
   - component: {fileID: 1420715493}
   - component: {fileID: 1420715492}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9987,7 +9987,7 @@ GameObject:
   - component: {fileID: 1468870827}
   - component: {fileID: 1468870826}
   - component: {fileID: 1468870825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (17)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -10117,7 +10117,7 @@ GameObject:
   - component: {fileID: 1491532173}
   - component: {fileID: 1491532172}
   - component: {fileID: 1491532171}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (33)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -10212,7 +10212,7 @@ GameObject:
   - component: {fileID: 1502504948}
   - component: {fileID: 1502504947}
   - component: {fileID: 1502504946}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10424,7 +10424,7 @@ GameObject:
   - component: {fileID: 1519225480}
   - component: {fileID: 1519225482}
   - component: {fileID: 1519225481}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10504,7 +10504,7 @@ GameObject:
   - component: {fileID: 1536511242}
   - component: {fileID: 1536511241}
   - component: {fileID: 1536511240}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (15)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -10599,7 +10599,7 @@ GameObject:
   - component: {fileID: 1542752773}
   - component: {fileID: 1542752772}
   - component: {fileID: 1542752771}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (8)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -10746,7 +10746,7 @@ GameObject:
   - component: {fileID: 1550239958}
   - component: {fileID: 1550239957}
   - component: {fileID: 1550239956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (25)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -10838,7 +10838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1553452533}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10881,7 +10881,7 @@ GameObject:
   - component: {fileID: 1557245884}
   - component: {fileID: 1557245883}
   - component: {fileID: 1557245882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11009,7 +11009,7 @@ GameObject:
   - component: {fileID: 1569146050}
   - component: {fileID: 1569146049}
   - component: {fileID: 1569146048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (30)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11197,7 +11197,7 @@ GameObject:
   - component: {fileID: 1586329896}
   - component: {fileID: 1586329895}
   - component: {fileID: 1586329894}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (9)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11292,7 +11292,7 @@ GameObject:
   - component: {fileID: 1603322651}
   - component: {fileID: 1603322650}
   - component: {fileID: 1603322649}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (27)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11387,7 +11387,7 @@ GameObject:
   - component: {fileID: 1639207388}
   - component: {fileID: 1639207387}
   - component: {fileID: 1639207386}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (12)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11482,7 +11482,7 @@ GameObject:
   - component: {fileID: 1639485931}
   - component: {fileID: 1639485930}
   - component: {fileID: 1639485929}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (17)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11577,7 +11577,7 @@ GameObject:
   - component: {fileID: 1641194220}
   - component: {fileID: 1641194219}
   - component: {fileID: 1641194218}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (21)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11672,7 +11672,7 @@ GameObject:
   - component: {fileID: 1647047198}
   - component: {fileID: 1647047197}
   - component: {fileID: 1647047196}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11767,7 +11767,7 @@ GameObject:
   - component: {fileID: 1651925682}
   - component: {fileID: 1651925681}
   - component: {fileID: 1651925680}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (28)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11862,7 +11862,7 @@ GameObject:
   - component: {fileID: 1653908647}
   - component: {fileID: 1653908646}
   - component: {fileID: 1653908645}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (34)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -11957,7 +11957,7 @@ GameObject:
   - component: {fileID: 1665863343}
   - component: {fileID: 1665863342}
   - component: {fileID: 1665863341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (34)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -12052,7 +12052,7 @@ GameObject:
   - component: {fileID: 1670391286}
   - component: {fileID: 1670391285}
   - component: {fileID: 1670391284}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (31)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -12146,7 +12146,7 @@ GameObject:
   - component: {fileID: 1675064583}
   - component: {fileID: 1675064585}
   - component: {fileID: 1675064584}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12226,7 +12226,7 @@ GameObject:
   - component: {fileID: 1705467845}
   - component: {fileID: 1705467844}
   - component: {fileID: 1705467843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (16)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -12498,7 +12498,7 @@ GameObject:
   - component: {fileID: 1773153565}
   - component: {fileID: 1773153564}
   - component: {fileID: 1773153563}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (29)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -12593,7 +12593,7 @@ GameObject:
   - component: {fileID: 1774462286}
   - component: {fileID: 1774462285}
   - component: {fileID: 1774462284}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (25)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -12688,7 +12688,7 @@ GameObject:
   - component: {fileID: 1786195033}
   - component: {fileID: 1786195032}
   - component: {fileID: 1786195031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (25)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -12899,7 +12899,7 @@ GameObject:
   - component: {fileID: 1810452796}
   - component: {fileID: 1810452795}
   - component: {fileID: 1810452794}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (19)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -12999,7 +12999,7 @@ GameObject:
   - component: {fileID: 1847317412}
   - component: {fileID: 1847317411}
   - component: {fileID: 1847317410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (28)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -13094,7 +13094,7 @@ GameObject:
   - component: {fileID: 1877332691}
   - component: {fileID: 1877332690}
   - component: {fileID: 1877332689}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (16)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -13189,7 +13189,7 @@ GameObject:
   - component: {fileID: 1878058013}
   - component: {fileID: 1878058012}
   - component: {fileID: 1878058011}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (10)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -13284,7 +13284,7 @@ GameObject:
   - component: {fileID: 1932560701}
   - component: {fileID: 1932560700}
   - component: {fileID: 1932560699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13510,7 +13510,7 @@ GameObject:
   - component: {fileID: 2022470039}
   - component: {fileID: 2022470038}
   - component: {fileID: 2022470037}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (24)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -13721,7 +13721,7 @@ GameObject:
   - component: {fileID: 2052385739}
   - component: {fileID: 2052385738}
   - component: {fileID: 2052385737}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (30)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -13816,7 +13816,7 @@ GameObject:
   - component: {fileID: 2059246785}
   - component: {fileID: 2059246784}
   - component: {fileID: 2059246783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13911,7 +13911,7 @@ GameObject:
   - component: {fileID: 2075101206}
   - component: {fileID: 2075101205}
   - component: {fileID: 2075101204}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -14006,7 +14006,7 @@ GameObject:
   - component: {fileID: 2108947653}
   - component: {fileID: 2108947652}
   - component: {fileID: 2108947651}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (27)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -14101,7 +14101,7 @@ GameObject:
   - component: {fileID: 2124785687}
   - component: {fileID: 2124785686}
   - component: {fileID: 2124785685}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14196,7 +14196,7 @@ GameObject:
   - component: {fileID: 2127768241}
   - component: {fileID: 2127768240}
   - component: {fileID: 2127768239}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5x5 (26)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -14288,7 +14288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2136987686}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14350,7 +14350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4395424851646409}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Assault_Rifle_01_Arms
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -14366,7 +14366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4631234634787699}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Grenade_Spawn_Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14382,7 +14382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4559781759786231}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: finger_01_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14398,7 +14398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4162156763503847}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14414,7 +14414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4633006862206547}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: finger_03_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14430,7 +14430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4950281782947787}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: finger_01_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14449,7 +14449,7 @@ GameObject:
   - component: {fileID: 223883095597531911}
   - component: {fileID: 114347674221782679}
   - component: {fileID: 114097870198094945}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Player Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14465,7 +14465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4992821080997231}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: middle_finger_02_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14483,7 +14483,7 @@ GameObject:
   - component: {fileID: 4400498947273557}
   - component: {fileID: 198606002737514491}
   - component: {fileID: 199081602496711297}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Muzzleflash Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14500,7 +14500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4566285151364803}
   - component: {fileID: 108560476258759063}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Muzzleflash Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14517,7 +14517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4099901208247613}
   - component: {fileID: 137799157052698091}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: big_bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14534,7 +14534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4624981521048647}
   - component: {fileID: 137800286426676465}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: assault_rifle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14550,7 +14550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4556640406679363}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: middle_finger_01_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14566,7 +14566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4931240559549919}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: arm_target_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14582,7 +14582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4968911541328645}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: middle_finger_03_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14598,7 +14598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4943854260228489}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Bullet Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14614,7 +14614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4331051170404543}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14630,7 +14630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4227252220121891}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: thumb_01_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14646,7 +14646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4013707895920003}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: middle_finger_02_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14662,7 +14662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4650720735118143}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14678,7 +14678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4164368401077767}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14698,7 +14698,7 @@ GameObject:
   - component: {fileID: 1402700939192146}
   - component: {fileID: 82039147994012451}
   - component: {fileID: 82020908756342765}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: arms_assault_rifle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14746,7 +14746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4288579556207127}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: lower_arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14763,7 +14763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4300422740140365}
   - component: {fileID: 137380438283738247}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14779,7 +14779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4235705738359465}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: thumb_01_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14795,7 +14795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4981572087496123}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: finger_03_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14811,7 +14811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4095239855339733}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: thumb_02_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14828,7 +14828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4326222716945493}
   - component: {fileID: 137169999526841237}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: assault_rifle_01_iron_sights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14844,7 +14844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4790835207220059}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Components
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14862,7 +14862,7 @@ GameObject:
   - component: {fileID: 224834170519152337}
   - component: {fileID: 222219626371563107}
   - component: {fileID: 114625171806663209}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: AmmoDivider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14878,7 +14878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4095514948570479}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14895,7 +14895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4858872285911501}
   - component: {fileID: 137695013218138405}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: knife 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14911,7 +14911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4298734922319379}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: IK_arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14927,7 +14927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4613984892848383}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14943,7 +14943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4765489036700535}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: middle_finger_01_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14959,7 +14959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4050303892845127}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14975,7 +14975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4288623638397063}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14991,7 +14991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4616487735437517}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: IK_arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15012,7 +15012,7 @@ GameObject:
   - component: {fileID: 673630136}
   - component: {fileID: 82931547342577571}
   - component: {fileID: 1778574680531978}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Assault_Rifle_01_FPSController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15040,7 +15040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4403548797942987}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Casing Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15056,7 +15056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4821993291342687}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: thumb_03_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15074,7 +15074,7 @@ GameObject:
   - component: {fileID: 224760351962491415}
   - component: {fileID: 222988261647619463}
   - component: {fileID: 114038877313732435}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: TotalAmmoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15090,7 +15090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4281234972041039}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: finger_02_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15108,7 +15108,7 @@ GameObject:
   - component: {fileID: 4745467895786825}
   - component: {fileID: 198891941154217021}
   - component: {fileID: 199519382921249057}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: SparkParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15128,7 +15128,7 @@ GameObject:
   - component: {fileID: 81719642523083103}
   - component: {fileID: 167360675289153015}
   - component: {fileID: 3448733942238979453}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Gun Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -15144,7 +15144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4131792947387727}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: finger_02_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15160,7 +15160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4715198137114691}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15176,7 +15176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4187895744857949}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: lower_arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15192,7 +15192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4652097392990531}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: thumb_03_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15208,7 +15208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4418387465090963}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: arm_target_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15224,7 +15224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4411340943903489}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: middle_finger_03_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15240,7 +15240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4199717411212501}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15258,7 +15258,7 @@ GameObject:
   - component: {fileID: 224746500144892639}
   - component: {fileID: 222448516523496427}
   - component: {fileID: 114415167975150279}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CurrentAmmoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15276,7 +15276,7 @@ GameObject:
   - component: {fileID: 4416867196473219}
   - component: {fileID: 20907571684418183}
   - component: {fileID: 2720475272098692593}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -15292,7 +15292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4849629421689433}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: thumb_02_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}

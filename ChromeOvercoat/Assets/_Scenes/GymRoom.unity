@@ -24386,6 +24386,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099606965}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1108939571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108939572}
+  m_Layer: 0
+  m_Name: secondWP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108939572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108939571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.06, y: 0, z: 1.26}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1289713202}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118826129
 GameObject:
   m_ObjectHideFlags: 0
@@ -29124,6 +29154,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1343897915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343897916}
+  m_Layer: 0
+  m_Name: firstWP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1343897916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343897915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.67, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1289713202}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1349624021
 Mesh:
   m_ObjectHideFlags: 0
@@ -31927,6 +31987,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491532169}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1495136471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
+  m_PrefabInstance: {fileID: 1966908810}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616ce8ce76bf2fa4e9ef18f24bcc5dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1500073926
 Mesh:
   m_ObjectHideFlags: 0
@@ -33338,13 +33409,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1549331546}
+  - component: {fileID: 1549331547}
   m_Layer: 0
   m_Name: Vessels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1549331546
 Transform:
   m_ObjectHideFlags: 0
@@ -33360,6 +33432,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549331547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549331545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef1ea9b284c92740a5fcdabe45f8ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vessels:
+  - {fileID: 1495136471}
 --- !u!1 &1550239955
 GameObject:
   m_ObjectHideFlags: 0
@@ -40777,6 +40863,14 @@ PrefabInstance:
       propertyPath: eelSpawnPoint
       value: 
       objectReference: {fileID: 1966908811}
+    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
+      propertyPath: firstWaypoint
+      value: 
+      objectReference: {fileID: 1343897916}
+    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
+      propertyPath: secondWaypoint
+      value: 
+      objectReference: {fileID: 1108939572}
     - target: {fileID: 7339750570313921342, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
       propertyPath: m_Name
       value: Vessel
