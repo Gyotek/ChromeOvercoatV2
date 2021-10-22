@@ -192,6 +192,7 @@ MonoBehaviour:
   metalImpactPrefabs:
   - {fileID: 4458509032938956, guid: 79927c6543a058b4383885fac101fe2e, type: 3}
   shotByPlayer: 1
+  damagevesselVFX: {fileID: 7016554018488441769, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
 --- !u!1 &1231345400216816
 GameObject:
   m_ObjectHideFlags: 0

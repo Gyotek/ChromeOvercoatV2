@@ -2093,6 +2093,128 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297425117}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &298432430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298432432}
+  - component: {fileID: 298432431}
+  - component: {fileID: 298432433}
+  - component: {fileID: 298432435}
+  - component: {fileID: 298432434}
+  m_Layer: 0
+  m_Name: PostProcessVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &298432431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298432430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: dcc6a23658c47d3489380a616c714a11, type: 2}
+--- !u!4 &298432432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298432430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7532833, y: 0.31282327, z: 9.231538}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &298432433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298432430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae46fbc4547514d40bca0ce2c1893c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vignetteGoal: 0.5
+  duration: 0.5
+  postPro: {fileID: 298432431}
+--- !u!114 &298432434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298432430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664c1657f66f7e14089d9ff7d2b75369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 3253194d729d7d844a8ad1523735ca63, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 298432433}
+        m_TargetAssemblyTypeName: FB_EnergyScreen, Assembly-CSharp
+        m_MethodName: EnergyCall
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &298432435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298432430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664c1657f66f7e14089d9ff7d2b75369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: e6715d0a887bd0846a6ee971349ea7f9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 298432433}
+        m_TargetAssemblyTypeName: FB_EnergyScreen, Assembly-CSharp
+        m_MethodName: EnergyCall
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &304874406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,25 +2317,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1995262370}
     m_Modifications:
-    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: isDown
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: eelPrefab
-      value: 
-      objectReference: {fileID: 2900836004599480215, guid: bbc4e0df8a4466442b2f09a79ffec74b, type: 3}
-    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: eelSpawnPoint
-      value: 
-      objectReference: {fileID: 320563118}
     - target: {fileID: 7339750570313921342, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
       propertyPath: m_Name
       value: Vessel (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7339750570313953824, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7339750570314212680, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
       propertyPath: m_RootOrder
@@ -2261,11 +2367,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
---- !u!4 &320563118 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1606351781, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-  m_PrefabInstance: {fileID: 320563116}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &320563119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7339750570314212680, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
@@ -2982,6 +3083,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 09449ded5f1c9494f847a53967c74bc6, type: 2}
     - {fileID: 11400000, guid: f53d17c1bd05d6645944d2aee1f3bc89, type: 2}
     - {fileID: 11400000, guid: e6715d0a887bd0846a6ee971349ea7f9, type: 2}
+    - {fileID: 11400000, guid: 3253194d729d7d844a8ad1523735ca63, type: 2}
     - {fileID: 11400000, guid: 11b0058d7da8f134994adad2588cc2a5, type: 2}
     - {fileID: 11400000, guid: 91f267eb8d505634799430bebbcce792, type: 2}
     - {fileID: 11400000, guid: 4f55f7a248f84474ea90f9bfa7443ea3, type: 2}
@@ -3012,112 +3114,124 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 10
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 7
+    - Name: $v
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 8
+    - Name: $v
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 9
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 0
     - Name: $v
       Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
-    - Name: $v
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 3
-    - Name: $v
-      Entry: 10
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 4
-    - Name: $v
-      Entry: 10
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 5
-    - Name: $v
-      Entry: 10
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 6
-    - Name: $v
-      Entry: 10
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 7
-    - Name: $v
-      Entry: 10
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 8
-    - Name: $v
-      Entry: 10
-      Data: 8
+      Data: 9
     - Name: 
       Entry: 8
       Data: 
@@ -4779,6 +4893,10 @@ PrefabInstance:
       propertyPath: eelSpawnPoint
       value: 
       objectReference: {fileID: 583736269}
+    - target: {fileID: 4444085324858584240, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
+      propertyPath: shootRange
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7339750570313921342, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
       propertyPath: m_Name
       value: Vessel
@@ -5477,6 +5595,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f3a48362bdb06f04fa559bfbb79ec5af, type: 3}
       propertyPath: m_Name
       value: FPS_arms_Anim03
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3a48362bdb06f04fa559bfbb79ec5af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a48362bdb06f04fa559bfbb79ec5af, type: 3}
@@ -8200,6 +8322,10 @@ PrefabInstance:
       propertyPath: eelSpawnPoint
       value: 
       objectReference: {fileID: 1200092786}
+    - target: {fileID: 4444085324858584240, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
+      propertyPath: shootRange
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7339750570313921342, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
       propertyPath: m_Name
       value: Vessel (2)
@@ -14729,62 +14855,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 27528f122c3cc0642a73af2714803e32, type: 3}
---- !u!1001 &7016554018203619433
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7016554018488441769, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_Name
-      value: VesselDamage
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalRotation.w
+    - target: {fileID: 5171102322821550926, guid: 27528f122c3cc0642a73af2714803e32, type: 3}
+      propertyPath: m_RenderPostProcessing
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7016554018488441770, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7f1c35ef6f237bd4688bbabc27cf07d5, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 27528f122c3cc0642a73af2714803e32, type: 3}

@@ -19,6 +19,9 @@ public class BulletScript : MonoBehaviour {
 
 	public bool shotByPlayer = true;
 
+	//FX
+	public GameObject damagevesselVFX;
+
 	private void Start () 
 	{
 		//Start destroy timer
@@ -54,6 +57,14 @@ public class BulletScript : MonoBehaviour {
 		}
 		else if (collision.gameObject.GetComponent<Vessel>() && shotByPlayer == true)
 		{
+
+			ContactPoint contact = collision.contacts[0];
+			Vector3 pos = contact.point;
+			Vector3 normal = contact.normal;
+
+			Debug.Log("HIT");
+			Instantiate(damagevesselVFX, pos, Quaternion.FromToRotation(Vector3.up, normal));
+
 			collision.transform.gameObject.GetComponent<Vessel>().TakeDamage(1);
 			//Destroy bullet object
 			Destroy(gameObject);

@@ -6,6 +6,8 @@ public class CharacterDrain : MonoBehaviour, IDrainer
 {
     bool canDrain;
 
+    public float energysedTime = 5;
+
     private IDrainable drainableTarget = null;
     public void SetDrainableTarget(IDrainable target, bool onRange)
     {
@@ -28,6 +30,14 @@ public class CharacterDrain : MonoBehaviour, IDrainer
             drainableTarget.Drain();
 
             EventsHandler.instance.TriggerEvent(EventsHandler.events.Drain);
+
+            StartCoroutine(Draning());
         }
+    }
+
+    IEnumerator Draning()
+    {
+        yield return new WaitForSeconds(energysedTime);
+        EventsHandler.instance.TriggerEvent(EventsHandler.events.DrainEnd);
     }
 }
