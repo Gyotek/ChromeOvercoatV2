@@ -3,7 +3,22 @@ guid: 616ce8ce76bf2fa4e9ef18f24bcc5dd7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - eelPrefab: {instanceID: 0}
+  - eelSpawnPoint: {instanceID: 0}
+  - deathC: {instanceID: 0}
+  - vesselData: {fileID: 11400000, guid: 600966a95c912e04087d45ed742a5099, type: 2}
+  - upSound: {instanceID: 0}
+  - downSound: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - root: {instanceID: 0}
+  - muzzleParticles: {instanceID: 0}
+  - sparkParticles: {instanceID: 0}
+  - muzzleflashLight: {instanceID: 0}
+  - mainAudioSource: {instanceID: 0}
+  - shootAudioSource: {instanceID: 0}
+  - firstWaypoint: {instanceID: 0}
+  - secondWaypoint: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

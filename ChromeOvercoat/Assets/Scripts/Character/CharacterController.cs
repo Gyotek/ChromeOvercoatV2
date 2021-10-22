@@ -5,8 +5,6 @@ using System.Linq;
 using FPSControllerLPFP;
 using UnityEngine;
 
-namespace Chrome
-{
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(CapsuleCollider))]
     public class CharacterController : MonoBehaviour
@@ -65,6 +63,11 @@ namespace Chrome
             _velocityZ = new SmoothVelocity();
             Cursor.lockState = CursorLockMode.Locked;
             ValidateRotationRestriction();
+        }
+
+        public void TakeDamage(int damage)
+        {
+
         }
 
         private Transform AssignCharactersCamera()
@@ -380,4 +383,4 @@ namespace Chrome
             }
         }
     }
-}
+

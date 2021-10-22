@@ -26,6 +26,7 @@ public class Vessel : MonoBehaviour
 	public bool isDown = false;
 
 	[Header("Customizable Options")]
+	[SerializeField] VesselDatas vesselData = default;
 	//Minimum time before the target goes back up
 	public float minTime;
 	//Maximum time before the target goes back up
@@ -78,11 +79,112 @@ public class Vessel : MonoBehaviour
 
 
 	[SerializeField] Transform root;
+	//min should always bee 1
+	private int minRandomValue = 1;
+	private int randomMuzzleflashValue;
+	public ParticleSystem muzzleParticles;
+	public ParticleSystem sparkParticles;
+	public Light muzzleflashLight;
+	//Used for fire rate
+	private float lastFired;
+
+
+	[Header("Audio Source")]
+	//Main audio source
+	public AudioSource mainAudioSource;
+	//Audio source used for shoot sound
+	public AudioSource shootAudioSource;
+	[System.Serializable]
+	public class soundClips
+	{
+		public AudioClip shootSound;
+		public AudioClip takeOutSound;
+		public AudioClip aimSound;
+	}
+	public soundClips SoundClips = default;
+
+	[System.Serializable]
+	public class spawnpoints
+	{
+		[Header("Spawnpoints")]
+		//Array holding casing spawn points 
+		//(some weapons use more than one casing spawn)
+		//Casing spawn point array
+		public Transform casingSpawnPoint;
+		//Bullet prefab spawn from this point
+		public Transform bulletSpawnPoint;
+	}
+	public spawnpoints Spawnpoints;
+
 	void Shoot()
-    {
+	{
 		if (!isShooting) return;
 		if (root != null) root.LookAt(new Vector3(playerPosition.x, root.position.y, playerPosition.z));
-    }
+
+
+		//If randomize muzzleflash is true, genereate random int values
+		if (vesselData.randomMuzzleflash == true)
+		{
+			randomMuzzleflashValue = Random.Range(minRandomValue, vesselData.maxRandomValue);
+		}
+
+		//Shoot automatic
+		if (Time.time - lastFired > 1 / vesselData.fireRate)
+		{
+			lastFired = Time.time;
+
+
+			shootAudioSource.clip = SoundClips.shootSound;
+			shootAudioSource.Play();
+
+			//anim.Play("Fire", 0, 0f);
+
+			//If random muzzle is false
+			if (!vesselData.randomMuzzleflash &&
+				vesselData.enableMuzzleflash == true)
+			{
+				muzzleParticles.Emit(1);
+				//Light flash start
+				StartCoroutine(MuzzleFlashLight());
+			}
+			else if (vesselData.randomMuzzleflash == true)
+			{
+				//Only emit if random value is 1
+				if (randomMuzzleflashValue == 1)
+				{
+					if (vesselData.enableSparks == true)
+					{
+						//Emit random amount of spark particles
+						sparkParticles.Emit(Random.Range(vesselData.minSparkEmission, vesselData.maxSparkEmission));
+					}
+					if (vesselData.enableMuzzleflash == true)
+					{
+						muzzleParticles.Emit(1);
+						//Light flash start
+						StartCoroutine(MuzzleFlashLight());
+					}
+				}
+			}
+
+			//Spawn bullet from bullet spawnpoint
+			var bullet = (Transform)Instantiate(
+				vesselData.Prefabs.bulletPrefab,
+				Spawnpoints.bulletSpawnPoint.transform.position,
+				Spawnpoints.bulletSpawnPoint.transform.rotation);
+
+			//Add velocity to the bullet
+			bullet.GetComponent<Rigidbody>().velocity =
+				bullet.transform.forward * vesselData.bulletForce;
+
+			bullet.GetComponent<BulletScript>().shotByPlayer = false;
+
+			//Spawn casing prefab at spawnpoint
+			Instantiate(vesselData.Prefabs.casingPrefab,
+				Spawnpoints.casingSpawnPoint.transform.position,
+				Spawnpoints.casingSpawnPoint.transform.rotation);
+
+		}
+	}
 
 	public void Destroyed()
 	{
@@ -136,6 +238,15 @@ public class Vessel : MonoBehaviour
 			else
 				targetWaypoint = secondWaypoint;
 		}
+	}
+
+	//Show light when shooting, then disable after set amount of time
+	private IEnumerator MuzzleFlashLight()
+	{
+
+		muzzleflashLight.enabled = true;
+		yield return new WaitForSeconds(vesselData.lightDuration);
+		muzzleflashLight.enabled = false;
 	}
 
 

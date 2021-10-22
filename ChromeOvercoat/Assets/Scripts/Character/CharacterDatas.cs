@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Chrome
-{
     [CreateAssetMenu(menuName = "Character/Character Data")]
     public class CharacterDatas : ScriptableObject
     {
@@ -37,5 +35,3 @@ namespace Chrome
         [Tooltip("Maximum rotation of the arms and camera on the axis."), SerializeField]
         public float maxVerticalAngle = 90f;
     }
-
-}
