@@ -33,8 +33,6 @@ public class DeathCube : MonoBehaviour
 
     IEnumerator Activate(bool Activating)
     {
-        Debug.Log(Activating);
-
         if (!Activating)
         {
             meshR.enabled = true;

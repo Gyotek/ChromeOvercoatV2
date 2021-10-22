@@ -42,7 +42,6 @@ public class Vessel : MonoBehaviour
 
 		//Animate the target "down"
 		//gameObject.GetComponent<Animation>().Play("target_down");
-		Debug.Log("Destroy");
 		deathC?.ActivateCall(false);
 		isDown = true;
 		//Set the downSound as current sound, and play it
@@ -58,7 +57,6 @@ public class Vessel : MonoBehaviour
 		isDown = false;
 		//Animate the target "up"
 		//gameObject.GetComponent<Animation>().Play("target_up");
-		Debug.Log("Posses : ");
 		deathC?.ActivateCall(true);
 		//Set the downSound as current sound, and play it
 		audioSource.GetComponent<AudioSource>().clip = upSound;

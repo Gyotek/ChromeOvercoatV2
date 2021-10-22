@@ -11,6 +11,10 @@ namespace Chrome
     [RequireComponent(typeof(CapsuleCollider))]
     public class CharacterController : MonoBehaviour
     {
+
+        // TODO : DELETE AFTER PROTO
+        [SerializeField] Animator cameraAnimator;
+
     #pragma warning disable 649
         [Header("Arms")]
         [Tooltip("The transform component that holds the gun camera."), SerializeField]
@@ -247,6 +251,7 @@ namespace Chrome
                 if (!_audioSource.isPlaying)
                 {
                     _audioSource.Play();
+                    HeadBobbing(true);
                 }
             }
             else
@@ -254,8 +259,15 @@ namespace Chrome
                 if (_audioSource.isPlaying)
                 {
                     _audioSource.Pause();
+                    HeadBobbing(false);
                 }
             }
+        }
+
+        // TODO : DELETE AFTER PROTO
+        void HeadBobbing(bool walking)
+        {
+            cameraAnimator.SetBool("IsWalking", walking);
         }
 
         /// A helper for assistance with smoothing the camera rotation.

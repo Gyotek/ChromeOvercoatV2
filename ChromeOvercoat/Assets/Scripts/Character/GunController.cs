@@ -299,8 +299,8 @@ namespace Chrome
 			}
 
 			//Walking when pressing down WASD keys
-			if (Input.GetKey(KeyCode.W) && !isRunning ||
-				Input.GetKey(KeyCode.A) && !isRunning ||
+			if (Input.GetKey(KeyCode.Z) && !isRunning ||
+				Input.GetKey(KeyCode.Q) && !isRunning ||
 				Input.GetKey(KeyCode.S) && !isRunning ||
 				Input.GetKey(KeyCode.D) && !isRunning)
 			{
@@ -312,7 +312,10 @@ namespace Chrome
 			}
 
 			//Running when pressing down W and Left Shift key
-			if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift)))
+			if ((Input.GetKey(KeyCode.Z) ||
+				Input.GetKey(KeyCode.Q) ||
+				Input.GetKey(KeyCode.D)) &&
+				Input.GetKey(KeyCode.LeftShift))
 			{
 				isRunning = true;
 			}
