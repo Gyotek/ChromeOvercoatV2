@@ -12,6 +12,7 @@ public class Vessel : MonoBehaviour
 
 	// FX
 	public DeathCube deathC;
+
 	public void TakeDamage(int damage)
     {
 		if (lifePoints <= 0 || isDown) return;
