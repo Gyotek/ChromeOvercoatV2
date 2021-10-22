@@ -65,7 +65,6 @@ public class EnergyEel : MonoBehaviour, IDrainable
         if (nextVessel == null)
             nextVessel = VesselManager.instance.GetRandomVessel();
 
-        //Debug.Log(Vector3.MoveTowards(transform.position, nextVessel.eelSpawnPoint.position, speed * Time.deltaTime));
         transform.position = Vector3.MoveTowards(transform.position, nextVessel.eelSpawnPoint.position, speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, nextVessel.eelSpawnPoint.position) < 1f)

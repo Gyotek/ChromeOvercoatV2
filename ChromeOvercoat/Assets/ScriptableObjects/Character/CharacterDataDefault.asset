@@ -16,6 +16,8 @@ MonoBehaviour:
   runningSpeed: 9
   movementSmoothness: 0.125
   jumpForce: 35
+  doublejumpForce: 35
+  airControl: 0.6
   mouseSensitivity: 17
   rotationSmoothness: 0.05
   minVerticalAngle: -90

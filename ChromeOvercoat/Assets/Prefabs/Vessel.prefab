@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eelPrefab: {fileID: 2900836004599480215, guid: bbc4e0df8a4466442b2f09a79ffec74b, type: 3}
   eelSpawnPoint: {fileID: 1606351781}
+  maxLifePoints: 3
   deathC: {fileID: 1979238523165229061}
   isDown: 0
   minTime: 5
@@ -178,6 +179,12 @@ MonoBehaviour:
   upSound: {fileID: 8300000, guid: 83ed69ca21a297b4ab15a1e89abd4e4b, type: 3}
   downSound: {fileID: 8300000, guid: 0a3d74157d2f1714894e1358632773c8, type: 3}
   audioSource: {fileID: 8430840397620316435}
+  shootRange: 1000
+  shootCooldown: 1
+  root: {fileID: 7339750570314212680}
+  firstWaypoint: {fileID: 0}
+  secondWaypoint: {fileID: 0}
+  speed: 15
 --- !u!1 &7339750570313921342
 GameObject:
   m_ObjectHideFlags: 0

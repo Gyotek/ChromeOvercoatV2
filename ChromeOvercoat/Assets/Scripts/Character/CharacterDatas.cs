@@ -21,6 +21,8 @@ namespace Chrome
         public float jumpForce = 35f;
         [Tooltip("Amount of force applied to the player when double-jumping."), SerializeField]
         public float doublejumpForce = 35f;
+        [Tooltip("1 is full air control, 0 is none"), SerializeField]
+        public float airControl = 0.8f;
 
         [Header("Look Settings")]
         [Tooltip("Rotation speed of the fps controller."), SerializeField]

@@ -7,6 +7,8 @@ namespace Chrome
 {
 	public class GunController : MonoBehaviour
 	{
+		public static GunController instance;
+
 		[SerializeField]
 		private GunDatas gunDatas = default;
 
@@ -86,7 +88,7 @@ namespace Chrome
 
 		private void Awake()
 		{
-
+			instance = this;
 			//Set the animator component
 			anim = GetComponent<Animator>();
 			//Set current ammo to total ammo value
