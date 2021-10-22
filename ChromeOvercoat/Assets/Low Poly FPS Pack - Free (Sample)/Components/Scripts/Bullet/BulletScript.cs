@@ -17,16 +17,19 @@ public class BulletScript : MonoBehaviour {
 	[Header("Impact Effect Prefabs")]
 	public Transform [] metalImpactPrefabs;
 
+	public bool shotByPlayer = true;
+
 	private void Start () 
 	{
 		//Start destroy timer
 		StartCoroutine (DestroyAfter ());
 		EventsHandler.instance.TriggerEvent(EventsHandler.events.BulletSpawn);
 	}
-
-	//If the bullet collides with anything
-	private void OnCollisionEnter (Collision collision) 
+    //If the bullet collides with anything
+    private void OnCollisionEnter(Collision collision)
 	{
+		//Debug.Log(collision.gameObject.name);
+
 		//If destroy on impact is false, start 
 		//coroutine with random destroy timer
 		if (!destroyOnImpact) 
@@ -40,16 +43,16 @@ public class BulletScript : MonoBehaviour {
 		}
 
 		//If bullet collides with "Metal" tag
-		if (collision.transform.tag == "Metal") 
+		if (collision.transform.tag == "Metal")
 		{
 			//Instantiate random impact prefab from array
 			Instantiate (metalImpactPrefabs [Random.Range 
 				(0, metalImpactPrefabs.Length)], transform.position, 
-				Quaternion.LookRotation (collision.contacts [0].normal));
+				Quaternion.LookRotation (collision.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position)));
 			//Destroy bullet object
 			Destroy(gameObject);
 		}
-		else if (collision.gameObject.GetComponent<Vessel>())
+		else if (collision.gameObject.GetComponent<Vessel>() && shotByPlayer == true)
 		{
 			collision.transform.gameObject.GetComponent<Vessel>().TakeDamage(1);
 			//Destroy bullet object
@@ -57,7 +60,7 @@ public class BulletScript : MonoBehaviour {
 		}
 
 		//If bullet collides with "Target" tag
-		else if (collision.transform.tag == "Target") 
+		else if (collision.transform.tag == "Target" && shotByPlayer == true) 
 		{
 			//Toggle "isHit" on target object
 			if (collision.transform.gameObject.GetComponent
@@ -74,6 +77,12 @@ public class BulletScript : MonoBehaviour {
 			//Toggle "explode" on explosive barrel object
 			collision.transform.gameObject.GetComponent
 				<ExplosiveBarrelScript>().explode = true;
+			//Destroy bullet object
+			Destroy(gameObject);
+		}
+		else if (collision.gameObject.GetComponent<CharacterController>() && shotByPlayer == false)
+		{
+			collision.transform.gameObject.GetComponent<CharacterController>().TakeDamage(1);
 			//Destroy bullet object
 			Destroy(gameObject);
 		}

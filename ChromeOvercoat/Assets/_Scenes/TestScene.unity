@@ -13456,29 +13456,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1549331546}
     m_Modifications:
-    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: isHit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: isDown
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: eelPrefab
-      value: 
-      objectReference: {fileID: 2900836004599480215, guid: bbc4e0df8a4466442b2f09a79ffec74b, type: 3}
-    - target: {fileID: 3111564394496501719, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: eelSpawnPoint
-      value: 
-      objectReference: {fileID: 1966908811}
     - target: {fileID: 7339750570313921342, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
       propertyPath: m_Name
       value: Vessel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7339750570313953824, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7339750570314212680, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
       propertyPath: m_RootOrder
@@ -13526,11 +13506,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
---- !u!4 &1966908811 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1606351781, guid: 8c384155004ff2445a4ead2615b33228, type: 3}
-  m_PrefabInstance: {fileID: 1966908810}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2022470036
 GameObject:
   m_ObjectHideFlags: 0

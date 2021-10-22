@@ -3,7 +3,9 @@ guid: fd2672f07fdaf0f42bf34582582f5053
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - anim: {instanceID: 0}
+  - eelData: {fileID: 11400000, guid: 21d79b1b49ee4404787974a6624dab6a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
